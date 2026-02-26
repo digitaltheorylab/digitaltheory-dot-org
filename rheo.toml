@@ -1,0 +1,11 @@
+version = "0.1.1"
+content_dir = "content"
+
+[pdf.spine]
+title = "Digital Theory Lab"
+vertebrae = ["index.typ", "research.typ", "people.typ", "events.typ"]
+merge = true
+
+[epub.spine]
+title = "Digital Theory Lab"
+vertebrae = ["index.typ", "research.typ", "people.typ", "events.typ"]
