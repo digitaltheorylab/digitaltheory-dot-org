@@ -43,6 +43,8 @@
 
 #person("Matthew Handelman", role: "Associate Professor of German", url: "https://people.cal.msu.edu/handelm/", affiliation: "Michigan State University")
 
+#person("Lachlan Kermode", role: "PhD Candidate, Modern Culture and Media", url: "https://lachlankermode.com", affiliation: "Brown University")
+
 #person("Jeffrey W. Kirkwood", role: "Associate Professor of Art History", url: "https://www.binghamton.edu/art-history/people/profile.html?id=kirkwood", affiliation: "Binghamton University")
 
 #person("Joseph Lemelin", role: "Assistant Professor, Philosophy", url: "https://www.stonybrook.edu/commcms/philosophy/people/_faculty/J_Lemelin.php", affiliation: "Stony Brook University")
