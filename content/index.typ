@@ -76,7 +76,8 @@
   
   let past = events-array
     .filter(e => e.date < today)
-    .sorted(key: e => e.date, reverse: true)
+    .sorted(key: e => e.date)
+    .rev()
   
   (upcoming: upcoming, past: past)
 }
