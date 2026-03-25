@@ -85,7 +85,7 @@
 #let display-past-by-year(past-events) = {
   let by-year = (:)
   for e in past-events {
-    let year = e.date.year()
+    let year = str(e.date.year())
     if year not in by-year {
       by-year.insert(year, ())
     }
