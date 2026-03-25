@@ -1,4 +1,4 @@
-#import "index.typ": template, event
+#import "site.typ": template, event
 #show: template.with(current-page: "events")
 
 == Upcoming 2026

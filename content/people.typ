@@ -1,4 +1,4 @@
-#import "index.typ": template, person
+#import "site.typ": template, person
 #show: template.with(current-page: "people")
 
 == Local Team
