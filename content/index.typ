@@ -53,18 +53,44 @@
     html.elem("div", attrs: (class: "event"))[
       #html.elem("div", attrs: (class: "event-meta"))[
         #if date != none [
-          #html.elem("span", attrs: (class: "event-date"))[#date]
+          #html.elem("span", attrs: (class: "event-date"))[#date.display("[month repr:long] [day], [year]")]
         ]
         #if url != none [*#link(url)[#speaker]*] else [*#speaker*]
       ]
       #body
     ]
   } else {
-    if date != none [*#date* --- ]
+    if date != none [*#date.display("[month repr:long] [day], [year]")* --- ]
     if url != none [#link(url)[*#speaker*]] else [*#speaker*]
     linebreak()
     body
   }
+}
+
+#let organize-events(events-array) = {
+  let today = datetime.today()
+  
+  let upcoming = events-array
+    .filter(e => e.date >= today)
+    .sorted(key: e => e.date)
+  
+  let past = events-array
+    .filter(e => e.date < today)
+    .sorted(key: e => e.date, reverse: true)
+  
+  (upcoming: upcoming, past: past)
+}
+
+#let display-past-by-year(past-events) = {
+  let by-year = (:)
+  for e in past-events {
+    let year = e.date.year()
+    if year not in by-year {
+      by-year.insert(year, ())
+    }
+    by-year.at(year).push(e)
+  }
+  by-year
 }
 
 #show: template.with(current-page: "index")
