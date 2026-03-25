@@ -70,13 +70,19 @@
 #let organize-events(events-array) = {
   let today = datetime.today()
   
+  let to-datetime(iso-str) = {
+    let parts = iso-str.split("-")
+    datetime(year: int(parts.at(0)), month: int(parts.at(1)), day: int(parts.at(2)))
+  }
+  
   let upcoming = events-array
-    .filter(e => e.date >= today)
-    .sorted(key: e => e.date)
+    .filter(e => to-datetime(e.date) >= today)
+    .sorted(key: e => to-datetime(e.date))
   
   let past = events-array
-    .filter(e => e.date < today)
-    .sorted(key: e => e.date, reverse: true)
+    .filter(e => to-datetime(e.date) < today)
+    .sorted(key: e => to-datetime(e.date))
+    .rev()
   
   (upcoming: upcoming, past: past)
 }
