@@ -24,9 +24,9 @@
 
 == Past Events
 #let past-by-year = display-past-by-year(organized.past)
-#for year in past-by-year.keys().sorted(reverse: true) {
+#for year in past-by-year.keys().sorted(reverse: true) [
   === #year
   #for e in past-by-year.at(year) {
     event(e.speaker, date: e.date, url: e.url)[#e.title]
   }
-}
+]
