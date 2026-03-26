@@ -22,9 +22,8 @@
   _No past events listed._
 ] else [
   #let years = get-unique-years(past.map(e => e.date.year))
-  #for y in years {
+  #for y in years [
     === #y
     #for e in past.filter(e => e.date.year == y) { render-event(e) }
-  }
+  ]
 ]
-
