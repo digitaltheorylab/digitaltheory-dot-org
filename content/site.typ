@@ -1,4 +1,3 @@
-// Site template
 #let template(current-page: none, doc) = {
   context if target() == "html" {
     html.elem("nav", attrs: (class: "site-nav"))[
@@ -74,7 +73,7 @@
 
   let date = e.date.display("[month repr:long] [day], [year]")
 
-  #event(e.speaker, date: date, url: url)[
+  event(e.speaker, date: date, url: url)[
     #if title != none { [#title] }
   ]
 }

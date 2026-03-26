@@ -11,19 +11,20 @@
 #let past = sorted.filter(e => e.date < today).rev()
 
 == Upcoming
-#if upcoming.len() == 0 {
+#if upcoming.len() == 0 [
   _No upcoming events listed._
-} else {
-  # for e in upcoming { render-event(e) }
-}
+] else [
+  #for e in upcoming { render-event(e) }
+]
 
 == Past Events
-#if past.len() == 0 {
+#if past.len() == 0 [
   _No past events listed._
-} else {
+] else [
   #let years = get-unique-years(past.map(e => e.date.year))
-  #for y in years {
+  # for y in years {
     === #y
     #for e in past.filter(e => e.date.year == y) { render-event(e) }
   }
-}
+]
+
