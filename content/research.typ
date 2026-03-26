@@ -1,4 +1,4 @@
-#import "index.typ": template
+#import "site.typ": template
 #show: template.with(current-page: "research")
 
 == Books
