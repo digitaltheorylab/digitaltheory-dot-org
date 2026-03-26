@@ -69,7 +69,7 @@
 
 #let render-event(e) = {
   let url = if "url" in e { e.url } else { none }
-  let title = if "title" in e and e.title != "" { e.title } else { none }
+  let title = if "title" in e { e.title } else { none }
 
   let date = e.date.display("[month repr:long] [day], [year]")
 
