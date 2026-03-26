@@ -1,8 +1,7 @@
-// content/events-list.typ
 #let events = (
   (
     speaker: "Terry Winograd (Stanford)",
-    date: datetime(year: 2026, month: 4, day: 21),
+    date: datetime(year: 2026, month: 4, day: 20),
     url: "https://as.nyu.edu/research-centers/remarque/events/Spring-2026/terry-winograd--what-s-up-with-ai-.html",
     title: "What's Up With AI?",
   ),
@@ -74,7 +73,7 @@
   (
     speaker: "Leif Weatherby (NYU), with Ben Recht (Berkeley)",
     date: datetime(year: 2025, month: 10, day: 30),
-    title: "From Language Machines to Decision Machines--and Back",
+    title: "From Language Machines to Decision Machines - and Back",
   ),
   (
     speaker: "Sarah Pourciau (Duke)",
@@ -157,7 +156,7 @@
     speaker: "Signs of Artificial Life",
     date: datetime(year: 2023, month: 3, day: 30),
     url: "https://digitalhumanities.nyu.edu/news/2023-06-28-hayles-deacon-recordings/",
-    title: "",
+    title: "Two-day symposium",
   ),
   (
     speaker: "Re-Interpretation",
