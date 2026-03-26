@@ -1,3 +1,4 @@
+// Site template
 #let template(current-page: none, doc) = {
   context if target() == "html" {
     html.elem("nav", attrs: (class: "site-nav"))[
@@ -66,3 +67,23 @@
     body
   }
 }
+
+#let render-event(e) = {
+  let url = if "url" in e { e.url } else { none }
+  let title = if "title" in e and e.title != "" { e.title } else { none }
+
+  let date = e.date.display("[month repr:long] [day], [year]")
+
+  #event(e.speaker, date: date, url: url)[
+    #if title != none { [#title] }
+  ]
+}
+
+#let get-unique-years(xs) = {
+  let out = ()
+  for x in xs {
+    if not out.contains(x) { out.push(x) }
+  }
+  out
+}
+
