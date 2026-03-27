@@ -22,7 +22,7 @@
     title: [Slop Practices],
   ),
   (
-    speaker: "Ellie Pavlick (NYU)",
+    speaker: "Ellie Pavlick (Brown)",
     date: datetime(year: 2026, month: 2, day: 6),
     url: "https://as.nyu.edu/research-centers/remarque/events/Spring-2026/ellie-pavlick---how--does-ai-think-.html",
     title: [(How) Does AI Think?],
