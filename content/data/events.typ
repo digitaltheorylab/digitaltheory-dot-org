@@ -180,3 +180,244 @@
     title: [Building AI Video Generation Tools on the Web],
   ),
 )
+
+(
+  speaker: "Jason Phang (NYU Center for Data Science)",
+  date: datetime(year: 2023, month: 3, day: 27),
+  title: [On Wolfram and LLMs],
+),
+(
+  speaker: "Ranjodh Singh Dhaliwal (Notre Dame)",
+  date: datetime(year: 2022, month: 12, day: 2),
+  title: [On Addressability],
+),
+(
+  speaker: "Ryan Healey (NYU)",
+  date: datetime(year: 2022, month: 11, day: 18),
+  title: [Engineering Abstraction: A Literary History],
+),
+(
+  speaker: "Avery Slater",
+  date: datetime(year: 2022, month: 11, day: 4),
+  title: [Post-Automation Poetics],
+),
+(
+  speaker: "Tung-Hui Hu",
+  date: datetime(year: 2022, month: 10, day: 21),
+  title: [Book talk, Digital Lethargy],
+),
+(
+  speaker: "Shane Denson",
+  date: datetime(year: 2022, month: 9, day: 9),
+  title: [Mediality as Power of the Flesh],
+),
+(
+  speaker: "What Is Digital Theory? A Symposium",
+  date: datetime(year: 2022, month: 5, day: 5),
+  title: [Beatrice Fazi (Sussex), Leif Weatherby, and others],
+),
+(
+  speaker: "Claire Song (NYU)",
+  date: datetime(year: 2022, month: 4, day: 22),
+  title: [Machine Language 2.0: The Total Modeling of Meaning in Artificial Neural Networks],
+),
+(
+  speaker: "Pierre Cassou-Noguès (Université Paris 8)",
+  date: datetime(year: 2022, month: 4, day: 8),
+  title: [Synhaptic Sensibility],
+),
+(
+  speaker: "Galit Wellner (Tel Aviv University)",
+  date: datetime(year: 2022, month: 4, day: 1),
+  title: [The Co-Shaping of Algorithmic Imagination],
+),
+(
+  speaker: "David Bates (UC Berkeley)",
+  date: datetime(year: 2022, month: 3, day: 11),
+  title: [Plasticity and Pathology],
+),
+(
+  speaker: "Jonathan Zong (MIT)",
+  date: datetime(year: 2022, month: 2, day: 18),
+  title: [Rich Screen Reader Experiences for Accessible Data Visualization],
+),
+(
+  speaker: "Alasdair Milne (KCL)",
+  date: datetime(year: 2022, month: 2, day: 4),
+  title: [Machine Learning and Collaborative Systems of Artistic-Curatorial Practice],
+),
+(
+  speaker: "Critical Inquiry: Surplus Data",
+  date: datetime(year: 2021, month: 12, day: 10),
+  title: [Special issue launch — Kirkwood, Weatherby, Bering-Porter, Handelman, Justie, Galloway, Parisi, Pourciau],
+),
+(
+  speaker: "Richard Müller (Institute of Czech Literature, Prague)",
+  date: datetime(year: 2021, month: 12, day: 3),
+  title: [The Information (Cybernetics) Moment],
+),
+(
+  speaker: "David Deutsch (Oxford)",
+  date: datetime(year: 2021, month: 12, day: 1),
+  title: [Quantum Computation],
+),
+(
+  speaker: "Visvanathan Ramesh (Goethe University Frankfurt)",
+  date: datetime(year: 2021, month: 11, day: 19),
+  title: [AI, AGI, and the Center for Cognition and Computation],
+),
+(
+  speaker: "Lydia Liu",
+  date: datetime(year: 2021, month: 10, day: 29),
+  title: [Wittgenstein in the Machine],
+),
+(
+  speaker: "Lila Lee-Morrison (SDU)",
+  date: datetime(year: 2021, month: 5, day: 7),
+  title: [Machinic Landscapes: Aesthetics of the Non-Human],
+),
+(
+  speaker: "Brian Cantwell Smith (University of Toronto)",
+  date: datetime(year: 2021, month: 4, day: 23),
+  title: [The Promise of Artificial Intelligence],
+),
+(
+  speaker: "Paola Ricaurte",
+  date: datetime(year: 2021, month: 4, day: 9),
+  title: [De-colonizing AI Ethics],
+),
+(
+  speaker: "Claire Song (NYU)",
+  date: datetime(year: 2021, month: 4, day: 6),
+  title: [Code War: A Transnational History of Machine Translation and Intelligence in East Asia, the Soviet Union, and the United States],
+),
+(
+  speaker: "Sam Kellogg (NYU)",
+  date: datetime(year: 2021, month: 3, day: 26),
+  title: [On High Ground: Mountains, Geopolitics, Alpine Media],
+),
+(
+  speaker: "Ryan Healey (NYU)",
+  date: datetime(year: 2021, month: 3, day: 16),
+  title: [A History of Abstraction?],
+),
+(
+  speaker: "Matteo Pasquinelli",
+  date: datetime(year: 2021, month: 3, day: 5),
+  title: [Material Tools of Algorithmic Thinking],
+),
+(
+  speaker: "Jeffrey Kirkwood (Binghamton)",
+  date: datetime(year: 2021, month: 2, day: 26),
+  title: [From Work to Proof-of-Work: Meaning and Value after Blockchain],
+),
+(
+  speaker: "Mercedes Bunz (KCL)",
+  date: datetime(year: 2021, month: 2, day: 5),
+  title: [How Not to be Governed like that by our Digital Technologies],
+),
+(
+  speaker: "Sam Kellogg (NYU)",
+  date: datetime(year: 2020, month: 12, day: 4),
+  title: [On AI and Metaphor],
+),
+(
+  speaker: "Beatrice Fazi (Sussex)",
+  date: datetime(year: 2020, month: 11, day: 20),
+  title: [Beyond Human: Deep Learning, Explainability and Representation],
+),
+(
+  speaker: "Emma Rae Norton (NYU)",
+  date: datetime(year: 2020, month: 11, day: 13),
+  title: [If You Give a Mouse Gilbert Simondon],
+),
+(
+  speaker: "Colin Koopman (University of Oregon)",
+  date: datetime(year: 2020, month: 10, day: 23),
+  title: [The Political Theory of Data: Institutions, Algorithms and Formats],
+),
+(
+  speaker: "Jonathan Zong (MIT / CSAIL)",
+  date: datetime(year: 2020, month: 10, day: 2),
+  title: [Designing Digital Systems to Theorize Collective Power],
+),
+(
+  speaker: "Clifford Siskin (NYU)",
+  date: datetime(year: 2020, month: 9, day: 18),
+  title: [Enlightenment and the Vectors of Information],
+),
+(
+  speaker: "Allison Parrish (NYU)",
+  date: datetime(year: 2020, month: 7, day: 10),
+  title: [Conversation on NLP],
+),
+(
+  speaker: "Lila Lee-Morrison (Lund University)",
+  date: datetime(year: 2020, month: 4, day: 24),
+  title: [Portraits of Automated Facial Recognition],
+),
+(
+  speaker: "Shannon Mattern and John Durham Peters",
+  date: datetime(year: 2020, month: 3, day: 4),
+  title: [Meteorological Media],
+),
+(
+  speaker: "Matthew Trager (NYU Center for Data Science)",
+  date: datetime(year: 2020, month: 2, day: 28),
+  title: [Functions and Deep Learning],
+),
+(
+  speaker: "Tyler Harper (NYU)",
+  date: datetime(year: 2019, month: 11, day: 18),
+  title: [Environmental Nihilism: Human Extinction Before the Bomb],
+),
+(
+  speaker: "Digital Theory Summer School, King's College London",
+  date: datetime(year: 2019, month: 5, day: 28),
+  title: [Student presentations and faculty advising clinics],
+),
+(
+  speaker: "William Falcon",
+  date: datetime(year: 2019, month: 5, day: 3),
+  title: [AI Research and Engineering],
+),
+(
+  speaker: "Matthew Trager (NYU CDS)",
+  date: datetime(year: 2019, month: 4, day: 26),
+  title: [Computer Vision, Geometry, and Machine Learning],
+),
+(
+  speaker: "Alfredo Canziani (NYU CS)",
+  date: datetime(year: 2019, month: 4, day: 12),
+  title: [Workshop series: Convolutional Neural Networks],
+),
+(
+  speaker: "Joe Lemelin (NYU)",
+  date: datetime(year: 2019, month: 4, day: 22),
+  title: [Aristotle and Machine Learning],
+),
+(
+  speaker: "Alfredo Canziani (NYU CS)",
+  date: datetime(year: 2019, month: 2, day: 22),
+  title: [Workshop: Python and Neural Network Architecture],
+),
+(
+  speaker: "Pete de Bolla (Cambridge)",
+  date: datetime(year: 2018, month: 12, day: 5),
+  title: [Politics in the Era of Emergent Hyper-Connectivity],
+),
+(
+  speaker: "Mohamed Zahran (NYU Courant Institute)",
+  date: datetime(year: 2018, month: 11, day: 7),
+  title: [How Fortran Is Built Out of Assembly],
+),
+(
+  speaker: "Dennis Tenen (Columbia)",
+  date: datetime(year: 2018, month: 10, day: 23),
+  title: [Platform Reading: Workshop on the Poetics of Computation],
+),
+(
+  speaker: "Zeena Feldman (KCL Digital Humanities)",
+  date: datetime(year: 2018, month: 10, day: 16),
+  title: [Simmel in Cyberspace / Data Detox Workshop],
+),
