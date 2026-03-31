@@ -153,10 +153,10 @@
     title: [On Reading and Interpreting Black Box Deep Neural Networks],
   ),
   (
-    speaker: "Signs of Artificial Life",
+    speaker: "N. Katherine Hayles and Terrence W. Deacon",
     date: datetime(year: 2023, month: 3, day: 30),
+    title: [Signs of Artificial Life: A Symposium and Debate],
     url: "https://digitalhumanities.nyu.edu/news/2023-06-28-hayles-deacon-recordings/",
-    title: [Two-day symposium],
   ),
   (
     speaker: "Re-Interpretation",
@@ -179,7 +179,7 @@
     date: datetime(year: 2023, month: 12, day: 1),
     title: [Building AI Video Generation Tools on the Web],
   ),
-)
+
 
 (
   speaker: "Jason Phang (NYU Center for Data Science)",
@@ -421,3 +421,4 @@
   date: datetime(year: 2018, month: 10, day: 16),
   title: [Simmel in Cyberspace / Data Detox Workshop],
 ),
+)
