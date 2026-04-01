@@ -11,7 +11,7 @@
 
 == Team
 
-#person("Lisa Gitelman", role: "Professor of Media and English", url: "https://steinhardt.nyu.edu/people/lisa-gitelman", affiliation: "NYU")
+#person("Lisa Gitelman", role: "Professor, Media and English", url: "https://steinhardt.nyu.edu/people/lisa-gitelman", affiliation: "NYU")
 
 #person("Clifford Siskin", role: "Professor, English and American Literature", url: "https://as.nyu.edu/faculty/clifford-siskin.html", affiliation: "NYU")
 
