@@ -26,8 +26,12 @@
   (February 2022). Special issue edited by Lab members. _Critical Inquiry_,
   Volume 48, Issue 2.
 
-== Working Group
+== Working Groups
 
-Working Group Sessions are conducted throughout the academic year, bringing
-together Lab members for discussions on readings and the theoretical
-dimensions of computational practice. Past syllabi are available on request.
+=== DTL main
+Our working group sessions are conducted throughout the academic year, bringing together Lab members for discussions on readings and the theoretical dimensions of computational practice. Past syllabi are available on request.
+The working group is currently run by #link("https://tylershoemaker.info/")[Tyler Shoemaker].
+
+=== #link("https://lolm.ohrg.org")[LOLM]
+The Language of Language Machines (LOLM) is a working group to produce a critical vocabulary for understanding contemporary (post-2015) natural language processing (NLP) literature. 
+The working group is currently run by #link("https://lachlankermode.com")[Lachlan Kermode] and #link("https://ryan-healey.com/")[Ryan Healey].
