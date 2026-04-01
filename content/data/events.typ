@@ -180,7 +180,7 @@
     title: [Building AI Video Generation Tools on the Web],
   ),
   (
-    speaker: "Jason Phang (NYU Center for Data Science)",
+    speaker: "Jason Phang (NYU)",
     date: datetime(year: 2023, month: 3, day: 27),
     title: [On Wolfram and LLMs],
   ),
@@ -202,7 +202,7 @@
   (
     speaker: "Tung-Hui Hu",
     date: datetime(year: 2022, month: 10, day: 21),
-    title: [Book talk, Digital Lethargy],
+    title: [Book talk, _Digital Lethargy_],
   ),
   (
     speaker: "Shane Denson",
@@ -210,9 +210,9 @@
     title: [Mediality as Power of the Flesh],
   ),
   (
-    speaker: "What Is Digital Theory? A Symposium",
+    speaker: "What Is Digital Theory? ",
     date: datetime(year: 2022, month: 5, day: 5),
-    title: [Beatrice Fazi (Sussex), Leif Weatherby, and others],
+    title: [One-day symposium],
   ),
   (
     speaker: "Claire Song (NYU)",
@@ -265,7 +265,7 @@
     title: [AI, AGI, and the Center for Cognition and Computation],
   ),
   (
-    speaker: "Lydia Liu",
+    speaker: "Lydia Liu (Columbia)",
     date: datetime(year: 2021, month: 10, day: 29),
     title: [Wittgenstein in the Machine],
   ),
@@ -280,7 +280,7 @@
     title: [The Promise of Artificial Intelligence],
   ),
   (
-    speaker: "Paola Ricaurte",
+    speaker: "Paola Ricaurte (Tecnológico de Monterrey)",
     date: datetime(year: 2021, month: 4, day: 9),
     title: [De-colonizing AI Ethics],
   ),
@@ -300,7 +300,7 @@
     title: [A History of Abstraction?],
   ),
   (
-    speaker: "Matteo Pasquinelli",
+    speaker: "Matteo Pasquinelli (Ca' Foscari)",
     date: datetime(year: 2021, month: 3, day: 5),
     title: [Material Tools of Algorithmic Thinking],
   ),
@@ -355,12 +355,12 @@
     title: [Portraits of Automated Facial Recognition],
   ),
   (
-    speaker: "Shannon Mattern and John Durham Peters",
+    speaker: "Shannon Mattern (Penn) and John Durham Peters (Yale)",
     date: datetime(year: 2020, month: 3, day: 4),
     title: [Meteorological Media],
   ),
   (
-    speaker: "Matthew Trager (NYU Center for Data Science)",
+    speaker: "Matthew Trager (NYU)",
     date: datetime(year: 2020, month: 2, day: 28),
     title: [Functions and Deep Learning],
   ),
@@ -372,7 +372,7 @@
   (
     speaker: "Digital Theory Summer School, King's College London",
     date: datetime(year: 2019, month: 5, day: 28),
-    title: [Student presentations and faculty advising clinics],
+    title: [Two-day symposium],
   ),
   (
     speaker: "William Falcon",
@@ -380,14 +380,14 @@
     title: [AI Research and Engineering],
   ),
   (
-    speaker: "Matthew Trager (NYU CDS)",
+    speaker: "Matthew Trager (NYU)",
     date: datetime(year: 2019, month: 4, day: 26),
     title: [Computer Vision, Geometry, and Machine Learning],
   ),
   (
-    speaker: "Alfredo Canziani (NYU CS)",
+    speaker: "Alfredo Canziani (NYU)",
     date: datetime(year: 2019, month: 4, day: 12),
-    title: [Workshop series: Convolutional Neural Networks],
+    title: [Workshop: Convolutional Neural Networks],
   ),
   (
     speaker: "Joe Lemelin (NYU)",
@@ -395,7 +395,7 @@
     title: [Aristotle and Machine Learning],
   ),
   (
-    speaker: "Alfredo Canziani (NYU CS)",
+    speaker: "Alfredo Canziani (NYU)",
     date: datetime(year: 2019, month: 2, day: 22),
     title: [Workshop: Python and Neural Network Architecture],
   ),
@@ -405,7 +405,7 @@
     title: [Politics in the Era of Emergent Hyper-Connectivity],
   ),
   (
-    speaker: "Mohamed Zahran (NYU Courant Institute)",
+    speaker: "Mohamed Zahran (NYU)",
     date: datetime(year: 2018, month: 11, day: 7),
     title: [How Fortran Is Built Out of Assembly],
   ),
