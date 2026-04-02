@@ -73,9 +73,9 @@
     name: "Eleonora Antonakaki",
     role: "PhD Candidate, German",
     url: "https://german.northwestern.edu/people/graduate-students/antonakaki-giannisi-eleonora.html",
-    institution : "Northwestern University",
+    institution: "Northwestern University",
     affiliation: "grad",
-  )
+  ),
   (
     name: "Jonah Henkle",
     role: "PhD Student, Comparative Literature",
