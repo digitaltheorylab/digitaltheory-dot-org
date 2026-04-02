@@ -24,25 +24,25 @@
   doc
 }
 
-#let person(name, role: none, url: none, affiliation: none) = {
+#let person(name, role: none, url: none, institution: none) = {
   context if target() == "html" {
     html.elem("div", attrs: (class: "person"))[
       #let linked-name = if url != none [#link(url)[#name]] else [#name]
       #html.elem("strong", attrs: (class: "person-name"))[#linked-name]
-      #if role != none or affiliation != none {
-        let meta = if role != none and affiliation != none [#emph(role) · #affiliation]
+      #if role != none or institution != none {
+        let meta = if role != none and institution != none [#emph(role) · #institution]
                    else if role != none [#emph(role)]
-                   else [#affiliation]
+                   else [#institution]
         html.elem("span", attrs: (class: "person-meta"))[#meta]
       }
     ]
   } else {
     let linked-name = if url != none [#link(url)[#name]] else [#name]
     [*#linked-name*\ ]
-    if role != none or affiliation != none {
-      let meta = if role != none and affiliation != none [#emph(role) · #affiliation]
+    if role != none or institution != none {
+      let meta = if role != none and institution != none [#emph(role) · #institution]
                  else if role != none [#emph(role)]
-                 else [#affiliation]
+                 else [#institution]
       text(fill: luma(96), size: 0.88em, meta)
     }
   }
@@ -85,4 +85,35 @@
   }
   out
 }
+
+#let dict-flat-equals(a, b) = {
+  if type(a) != dictionary { return false }
+  if type(b) != dictionary { return false }
+  if a.len() != b.len() { return false }
+
+  for (k, v) in a {
+    if k not in b { return false }
+    if a.at(k) != b.at(k) { return false }
+  }
+
+  return true
+}
+
+#let render-people(groups, people) = [
+  #for (k, group) in groups {
+    let relevant-people = people.filter(p => dict-flat-equals(p.affiliation, group))
+    let sorted = relevant-people.sorted(key: p => p.name.split(" ").last())
+
+    [== #group.name]
+    for p in relevant-people {
+      person(
+        p.name,
+        role: p.role,
+        url: p.at("url", default: none),
+        institution: p.institution,
+      )
+    }
+  }
+]
+
 
