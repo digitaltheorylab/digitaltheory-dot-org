@@ -173,4 +173,4 @@
     institution: "The New School",
     affiliation: "affiliate",
   ),
-),
+)
