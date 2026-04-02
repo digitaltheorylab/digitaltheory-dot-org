@@ -86,10 +86,11 @@ Edit `content/data/people.typ`. Append a new tuple to the `people` array:
   role: "Title or Position",
   url: "https://optional-profile-link",  // omit if no link
   institution: "Institution",
-  affiliation: "team OR grad OR affiliate",  // use only ONE affiliation key
+  affiliation: "groups.team OR groups.grad OR groups.affiliate",
 )
 ```
 
 - People are automatically sorted by affiliation and alphabetical order.
 - `url` is optional; omit the field if there is no link.
+- Use only one affiliation key; see `groups` in `content/data/people.typ`
 
