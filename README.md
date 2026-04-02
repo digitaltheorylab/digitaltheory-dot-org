@@ -86,7 +86,7 @@ Edit `content/data/people.typ`. Append a new tuple to the `people` array:
   role: "Title or Position",
   url: "https://optional-profile-link",  // omit if no link
   institution: "Institution",
-  affiliation: "groups.team OR groups.grad OR groups.affiliate",
+  affiliation: groups.<AFFILIATION>,  // groups.team OR groups.grad OR groups.affiliate
 )
 ```
 
