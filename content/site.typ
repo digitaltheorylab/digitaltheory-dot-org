@@ -86,3 +86,34 @@
   out
 }
 
+#let dict-flat-equals(a, b) = {
+  if type(a) != dictionary { return false }
+  if type(b) != dictionary { return false }
+  if a.len() != b.len() { return false }
+
+  for (k, v) in a {
+    if k not in b { return false }
+    if a.at(k) != b.at(k) { return false }
+  }
+
+  return true
+}
+
+#let render-people(groups, people) = [
+  #for (k, group) in groups {
+    let relevant-people = people.filter(p => dict-flat-equals(p.affiliation, group))
+    let sorted = relevant-people.sorted(key: p => p.name.split(" ").last())
+
+    [== #group.name]
+    for p in relevant-people {
+      person(
+        p.name,
+        role: p.role,
+        url: p.at("url", default: none),
+        institution: p.institution,
+      )
+    }
+  }
+]
+
+

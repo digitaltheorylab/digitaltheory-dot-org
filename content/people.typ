@@ -1,5 +1,5 @@
-#import "site.typ": template, person
-#import "data/people.typ": people
+#import "site.typ": template, person, render-people
+#import "data/people.typ": people, groups
 #show: template.with(current-page: "people")
 
 == Founding Director 
@@ -20,22 +20,5 @@
   institution: "Texas A&M"
 )
 
-#let last-name(p) = p.name.split(" ").last()
-#let sorted = people.sorted(key: p => last-name(p))
-
-#let render-group(title, key) = [
-  == #title
-  #for p in sorted.filter(p => p.affiliation == key) [
-    #person(
-      p.name,
-      role: p.role,
-      url: p.at("url", default: none),
-      institution: p.institution,
-    )
-  ]
-]
-
-#render-group("Team", "team")
-#render-group("Graduate Students", "grad")
-#render-group("Affiliates", "affiliate")
+#render-people(groups, people)
 
