@@ -13,6 +13,10 @@
 
 == Articles and Special Issues
 
+- #link("https://www.journals.uchicago.edu/doi/abs/10.1086/739755")["On the
+  Calculation of Meaning, or Doing Words without Things"] (March 2026).
+  Mercedes Bunz. _Critical Inquiry_, Volume 52, Issue 3.
+
 - #link("https://link.springer.com/article/10.1007/s00146-026-02897-y")["Systems
   Programming the Model"] (March 2026). Tyler Shoemaker. _AI & Society_.
 
