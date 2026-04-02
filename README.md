@@ -25,9 +25,13 @@ digitaltheory.org/
 
 ## Stack: Typst & Rheo
 
-[Typst](https://typst.app/docs/tutorial/) is a modern markup and scripting language used to author all content (`.typ` files). It supports basic markup, structured data, and conditional rendering.
+[Typst](https://typst.app/docs/tutorial/) is a modern markup and scripting
+language used to author all content (`.typ` files). It supports basic markup,
+structured data, and conditional rendering.
 
-[Rheo](https://rheo.ohrg.org/) is a static site generator that compiles Typst to HTML, PDF, and EPUB. It is configured via `rheo.toml`. To build locally, download Rheo and run:
+[Rheo](https://rheo.ohrg.org/) is a static site generator that compiles Typst
+to HTML, PDF, and EPUB. It is configured via `rheo.toml`. To build locally,
+download Rheo and run:
 
 ```sh
 rheo watch . --html --open
@@ -35,7 +39,8 @@ rheo watch . --html --open
 
 ## Deployment
 
-The site is hosted on **Netlify** and auto-deploys on pushes to the `main` branch on GitHub.
+The site is hosted on **Netlify** and auto-deploys on pushes to the `main`
+branch on GitHub.
 
 - **Build command** (from `netlify.toml`): `bash build.sh`
 - **Publish directory**: `build/html`
@@ -43,11 +48,14 @@ The site is hosted on **Netlify** and auto-deploys on pushes to the `main` branc
 ### What `build.sh` does
 
 1. Downloads the `rheo` binary from GitHub releases if not cached.
-2. Downloads Berkeley Mono fonts from a private GitHub repo using the `FONTS_GITHUB_TOKEN` env var (set in the Netlify dashboard). Falls back to local `fonts/` symlinks if the variable is not set.
+2. Downloads Berkeley Mono fonts from a private GitHub repo using the
+   `FONTS_GITHUB_TOKEN` env var (set in the Netlify dashboard). Falls back to
+   local `fonts/` symlinks if the variable is not set.
 3. Runs `rheo compile . --html` to generate `build/html/`.
 4. Copies `content/img/` into the build output.
 
-The `FONTS_GITHUB_TOKEN` secret must be configured in **Netlify → Site settings → Environment variables**.
+The `FONTS_GITHUB_TOKEN` secret must be configured in **Netlify -> Site
+settings → Environment variables**.
 
 ## Adding Events
 
@@ -62,20 +70,26 @@ Edit `content/data/events.typ`. Append a new tuple to the `events` array:
 ),
 ```
 
-- Events are automatically sorted by date and split into **Upcoming** / **Past** sections — no manual ordering needed.
+- Events are automatically sorted by date and split into **Upcoming** /
+  **Past** sections.
 - `url` is optional; omit the field entirely if there is no link.
-- For conferences or multi-speaker events, use the event or group name as `speaker`.
+- For conferences or multi-speaker events, use the event or group name as
+  `speaker`.
 
 ## Adding People
 
-Edit `content/people.typ`. Add a `#person()` call in the appropriate section (`== Local Team` or `== Global Partners`):
+Edit `content/data/people.typ`. Append a new tuple to the `people` array:
 
 ```typst
-#person("Full Name",
+(
+  name: "Full Name",
   role: "Title or Position",
-  affiliation: "Institution",
-  url: "https://optional-profile-link")
+  url: "https://optional-profile-link",  // omit if no link
+  institution: "Institution",
+  affiliation: "team OR grad OR affiliate",  // use only ONE affiliation key
+)
 ```
 
-- All named arguments are optional; omit any that don't apply.
-- Order within a section is manual — place the entry where it should appear in the list.
+- People are automatically sorted by affiliation and alphabetical order.
+- `url` is optional; omit the field if there is no link.
+
