@@ -195,7 +195,7 @@
     title: [Engineering Abstraction: A Literary History],
   ),
   (
-    speaker: "Avery Slater",
+    speaker: "Avery Slater (U Toronto)",
     date: datetime(year: 2022, month: 11, day: 4),
     title: [Post-Automation Poetics],
   ),
@@ -247,7 +247,7 @@
   (
     speaker: "Critical Inquiry: Surplus Data",
     date: datetime(year: 2021, month: 12, day: 10),
-    title: [Special issue launch — Kirkwood, Weatherby, Bering-Porter, Handelman, Justie, Galloway, Parisi, Pourciau],
+    title: [Special issue launch],
   ),
   (
     speaker: "Richard Müller (Institute of Czech Literature, Prague)",
@@ -325,7 +325,7 @@
     title: [Beyond Human: Deep Learning, Explainability and Representation],
   ),
   (
-    speaker: "Emma Rae Norton (NYU)",
+    speaker: "Rae Bruml Norton (NYU)",
     date: datetime(year: 2020, month: 11, day: 13),
     title: [If You Give a Mouse Gilbert Simondon],
   ),
