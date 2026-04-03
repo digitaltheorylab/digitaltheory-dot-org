@@ -105,7 +105,7 @@
     let sorted = relevant-people.sorted(key: p => p.name.split(" ").last())
 
     [== #group.name]
-    for p in relevant-people {
+    for p in sorted {
       person(
         p.name,
         role: p.role,

@@ -1,0 +1,670 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>@font-face {
+  font-family: 'Berkeley Mono';
+  src: url('./fonts/BerkeleyMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Berkeley Mono';
+  src: url('./fonts/BerkeleyMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Berkeley Mono';
+  src: url('./fonts/BerkeleyMono-Oblique.ttf') format('truetype');
+  font-weight: 400;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: 'Berkeley Mono';
+  src: url('./fonts/BerkeleyMono-Bold-Oblique.ttf') format('truetype');
+  font-weight: 700;
+  font-style: oblique;
+}
+
+/* ============================================
+   CSS Variables
+   ============================================ */
+:root {
+  --background-color: #ffffff;
+  --text-color: #111111;
+  --link-color: #111111;
+  --border-color: #999999;
+  --muted-color: #999999;
+}
+
+/* ============================================
+   Base Layout
+   ============================================ */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Berkeley Mono', monospace;
+  font-size: 1em;
+  line-height: 1.3;
+  margin: 0 auto;
+  padding: 50px;
+  max-width: 38em;
+}
+
+/* ============================================
+   Navigation
+   ============================================ */
+.site-nav {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.site-nav + hr {
+  margin-top: 0;
+  height: 5px;
+}
+
+.site-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--muted-color);
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.site-nav a:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+  text-decoration-color: var(--text-color);
+}
+
+.site-title {
+  font-size: 0.9em;
+  color: var(--text-color) !important;
+}
+
+.site-nav li.active a,
+.site-title.active {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+/* ============================================
+   Typography
+   ============================================ */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--border-color);
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 1.25em;
+  margin-bottom: 0.25em;
+}
+
+h3 {
+  font-weight: 600;
+  margin-top: 1.75em;
+  margin-bottom: 0.5em;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.6em;
+}
+
+h3::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border-color);
+}
+
+/* ============================================
+   Links
+   ============================================ */
+a {
+  color: var(--link-color);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-color 0.25s ease;
+}
+
+a:hover {
+  text-decoration-color: var(--link-color);
+}
+
+/* ============================================
+   Lists
+   ============================================ */
+ul, ol {
+  padding-left: 2em;
+  margin: 0.5em 0;
+}
+
+/* ============================================
+   Person Cards
+   ============================================ */
+.person {
+  margin: 0.75em 0;
+}
+
+.person-name {
+  display: block;
+}
+
+.person-meta {
+  display: block;
+  color: var(--muted-color);
+  font-size: 0.88em;
+}
+
+/* ============================================
+   Events
+   ============================================ */
+.event {
+  margin: 1.25em 0;
+  padding-left: 1em;
+  border-left: 1px solid var(--border-color);
+}
+
+.event-meta {
+  margin-bottom: 0;
+}
+
+.event p {
+  margin: 0;
+}
+
+.event-date {
+  color: var(--muted-color);
+  font-size: 0.88em;
+  margin-right: 0.5em;
+}
+
+/* ============================================
+   Media
+   ============================================ */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5em 0;
+}
+
+/* ============================================
+   Code
+   ============================================ */
+code {
+  font-family: 'Courier New', monospace;
+  background-color: rgba(0, 0, 0, 0.06);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.88em;
+}
+
+/* ============================================
+   Blockquotes
+   ============================================ */
+blockquote {
+  margin: 1em 0;
+  padding-left: 1em;
+  border-left: 2px solid var(--border-color);
+  color: var(--muted-color);
+  font-style: italic;
+}
+
+/* ============================================
+   Rules
+   ============================================ */
+hr {
+  height: 1px;
+  background-color: var(--border-color);
+  border: none;
+  margin: 1.25em 0;
+}
+
+/* ============================================
+   Endnotes
+   ============================================ */
+section[role="doc-endnotes"] {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid var(--border-color);
+}
+
+section[role="doc-endnotes"] ol li a[role="doc-backlink"] {
+  padding-right: 0.2em;
+}
+
+/* ============================================
+   Hamburger (hidden on desktop)
+   ============================================ */
+.nav-toggle {
+  display: none;
+}
+
+.nav-hamburger {
+  display: none;
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+    font-size: 0.9em;
+  }
+
+  .site-nav {
+    position: sticky;
+    top: 0;
+    background: var(--background-color);
+    z-index: 100;
+    flex-wrap: wrap;
+    border-bottom: 5px solid var(--border-color);
+  }
+
+  .site-nav + hr {
+    display: none;
+  }
+
+  .nav-hamburger {
+    display: block;
+    cursor: pointer;
+    color: var(--muted-color);
+    font-size: 0;
+    user-select: none;
+  }
+
+  .nav-hamburger::before {
+    content: '☰';
+    font-size: 1.1rem;
+    display: inline-block;
+    transition: transform 0.25s ease;
+  }
+
+  .nav-toggle:checked ~ .nav-hamburger::before {
+    content: '✕';
+    transform: rotate(90deg);
+  }
+
+  .site-nav ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 0.5em 0;
+  }
+
+  .nav-toggle:checked ~ ul {
+    display: flex;
+  }
+}
+</style></head>
+  <body>
+    <nav class="site-nav">
+      <p><a href="./index.html" class="site-title">Digital Theory Lab</a></p>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle"><label for="nav-toggle" class="nav-hamburger">☰</label>
+      <ul>
+        <li class=""><a href="./research.html">Research</a></li>
+        <li class=""><a href="./people.html">People</a></li>
+        <li class="active"><a href="./events.html">Events</a></li>
+      </ul>
+    </nav>
+    <hr>
+    <h2>Events</h2>
+    <h3>Upcoming</h3>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">April 03, 2026</span> <strong>Sam Kellogg (U Montana)</strong></div>
+      <p>Computational Earthwork: The U.S. Highway System and the Dawn of Digital Terrain Modeling</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">April 20, 2026</span> <strong><a href="https://as.nyu.edu/research-centers/remarque/events/Spring-2026/terry-winograd--what-s-up-with-ai-.html">Terry Winograd (Stanford)</a></strong></div>
+      <p>What’s Up With AI?</p>
+    </div>
+    <h3>Past Events</h3>
+    <h4>2026</h4>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">March 09, 2026</span> <strong><a href="https://as.nyu.edu/research-centers/remarque/events/Spring-2026/cultural-ai--an-emerging-field.html">Cultural AI</a></strong></div>
+      <p>Three-day conference</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">February 13, 2026</span> <strong>Alijan Ozkiral (NYU)</strong></div>
+      <p>Slop Practices</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">February 06, 2026</span> <strong><a href="https://as.nyu.edu/research-centers/remarque/events/Spring-2026/ellie-pavlick---how--does-ai-think-.html">Ellie Pavlick (Brown)</a></strong></div>
+      <p>(How) Does AI Think?</p>
+    </div>
+    <h4>2025</h4>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">November 21, 2025</span> <strong>Hannes Bajohr (Berkeley)</strong></div>
+      <p>The Latent Space of Meaning and the Novel: World Models in AI and Literature</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">November 20, 2025</span> <strong><a href="https://as.nyu.edu/research-centers/remarque/events/Fall-2025/ai-and-the-novel--with-hannes-bajohr-and-stephen-marche.html">Hannes Bajohr (Berkeley) and Stephen Marche</a></strong></div>
+      <p>AI and the Novel</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">November 07, 2025</span> <strong>Sarah Pourciau (Duke)</strong></div>
+      <p>Symbolic Throughput</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">October 30, 2025</span> <strong>Leif Weatherby (NYU), with Ben Recht (Berkeley)</strong></div>
+      <p>From Language Machines to Decision Machines - and Back</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">October 13, 2025</span> <strong><a href="https://as.nyu.edu/research-centers/remarque/events/Fall-2025/karen-hao-on-empire-of-ai.html">Karen Hao</a></strong></div>
+      <p>Book talk, <em>Empire of AI</em></p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">October 10, 2025</span> <strong>Zachary Stine (UCA)</strong></div>
+      <p>On The Differential Meaning of Models</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">September 19, 2025</span> <strong>Felicia Jing, Juana Becerra, and Ranjodh Singh Dhaliwal</strong></div>
+      <p>On Emplotment: Phantom Islands, Synthetic Data, and the Coloniality of Simulated Algorithmic Space</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">May 02, 2025</span> <strong>Lily Chumley (NYU)</strong></div>
+      <p>(Semiotic) Multimodality Versus the Media of Research</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">April 25, 2025</span> <strong>Naja LeFevre Grundtmann (SDU)</strong></div>
+      <p>Smooth Tex(x)tures</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">April 21, 2025</span> <strong>Imogen Forbes-Macphail (Harvard)</strong></div>
+      <p>On the Four-Color Theorem and the Aesthetics of Computational Proof</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">April 11, 2025</span> <strong>Mercedes Bunz (KCL)</strong></div>
+      <p>On the Calculation of Meaning</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">February 06, 2025</span> <strong><a href="https://as.nyu.edu/research-centers/remarque/events/Spring-2025/vernacular-ai--2-day-symposium.html">Vernacular AI</a></strong></div>
+      <p>Two-day symposium</p>
+    </div>
+    <h4>2024</h4>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">November 15, 2024</span> <strong>Jed Dobson (Dartmouth)</strong></div>
+      <p>On Reading and Interpreting Black Box Deep Neural Networks</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">November 01, 2024</span> <strong>Beatrice Fazi (Sussex)</strong></div>
+      <p>The Computational Search for Unity: Synthesis in Generative AI</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">October 25, 2024</span> <strong>Cliff Siskin (NYU)</strong></div>
+      <p>The Advancement of Knowledge</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">October 04, 2024</span> <strong>Johan Malmstedt (Umeå) and Sebastian Breu (Humboldt)</strong></div>
+      <p>The Similarity Engine: Towards a Media History of Vector Modeling</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">September 20, 2024</span> <strong>Kyunghyun Cho (NYU) and Nick Seaver (Tufts)</strong></div>
+      <p>Oral History of Neural Nets (with NYU’s Center for Data Science)</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">May 29, 2024</span> <strong><a href="https://findresearcher.sdu.dk/ws/portalfiles/portal/269249394/Semiotic_Machines_Flyer.pdf">Semiotic Machines: Artificial Text and the Praxis of Reading</a></strong></div>
+      <p>Three-day conference</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">April 24, 2024</span> <strong>Kathrin Maurer (SDU)</strong></div>
+      <p>Book talk, <em>The Drone Sensorium</em></p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">April 19, 2024</span> <strong>Stephanie Dick (SFU)</strong></div>
+      <p>The Marxist in the Machine</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">April 05, 2024</span> <strong>James Duesterberg</strong></div>
+      <p>Zero Signifier</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">February 23, 2024</span> <strong>Allison Parrish (NYU)</strong></div>
+      <p>Computation, Collage, and the Cut</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">February 02, 2024</span> <strong>Yohei Igarashi (U Conn)</strong></div>
+      <p>Understanding Literary Science ca. 1930</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">January 26, 2024</span> <strong><a href="https://nyuad.nyu.edu/en/events/2024/january/from-deep-learning-to-rational-machines.html">Cameron Buckner (UF)</a></strong></div>
+      <p>Book talk, <em>From Deep Learning to Rational Machines</em></p>
+    </div>
+    <h4>2023</h4>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">December 01, 2023</span> <strong>Yining Shi (NYU)</strong></div>
+      <p>Building AI Video Generation Tools on the Web</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">November 06, 2023</span> <strong>Tal Linzen (NYU)</strong></div>
+      <p>On Planting Trees in Language Models</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">September 29, 2023</span> <strong>Tyler Shoemaker (UC Davis)</strong></div>
+      <p>Distributional Semantics without Distributionalism</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">September 22, 2023</span> <strong><a href="https://as.nyu.edu/departments/english/Events/fall-2023/re-interpretation--hermeneutics-in-the-age-of-ai.html">Re-Interpretation</a></strong></div>
+      <p>Hermeneutics in the Age of AI</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">March 30, 2023</span> <strong><a href="https://digitalhumanities.nyu.edu/news/2023-06-28-hayles-deacon-recordings/">N. Katherine Hayles and Terrence W. Deacon</a></strong></div>
+      <p>Signs of Artificial Life: A Symposium and Debate</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">March 27, 2023</span> <strong>Jason Phang (NYU)</strong></div>
+      <p>On Wolfram and LLMs</p>
+    </div>
+    <h4>2022</h4>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">December 02, 2022</span> <strong>Ranjodh Singh Dhaliwal (Notre Dame)</strong></div>
+      <p>On Addressability</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">November 18, 2022</span> <strong>Ryan Healey (NYU)</strong></div>
+      <p>Engineering Abstraction: A Literary History</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">November 04, 2022</span> <strong>Avery Slater (U Toronto)</strong></div>
+      <p>Post-Automation Poetics</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">October 21, 2022</span> <strong>Tung-Hui Hu</strong></div>
+      <p>Book talk, <em>Digital Lethargy</em></p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">September 09, 2022</span> <strong>Shane Denson</strong></div>
+      <p>Mediality as Power of the Flesh</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">May 05, 2022</span> <strong>What Is Digital Theory?<span style="white-space: pre-wrap"> </span></strong></div>
+      <p>One-day symposium</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">April 22, 2022</span> <strong>Claire Song (NYU)</strong></div>
+      <p>Machine Language 2.0: The Total Modeling of Meaning in Artificial Neural Networks</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">April 08, 2022</span> <strong>Pierre Cassou-Noguès (Université Paris 8)</strong></div>
+      <p>Synhaptic Sensibility</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">April 01, 2022</span> <strong>Galit Wellner (Tel Aviv University)</strong></div>
+      <p>The Co-Shaping of Algorithmic Imagination</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">March 11, 2022</span> <strong>David Bates (UC Berkeley)</strong></div>
+      <p>Plasticity and Pathology</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">February 18, 2022</span> <strong>Jonathan Zong (MIT)</strong></div>
+      <p>Rich Screen Reader Experiences for Accessible Data Visualization</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">February 04, 2022</span> <strong>Alasdair Milne (KCL)</strong></div>
+      <p>Machine Learning and Collaborative Systems of Artistic-Curatorial Practice</p>
+    </div>
+    <h4>2021</h4>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">December 10, 2021</span> <strong>Critical Inquiry: Surplus Data</strong></div>
+      <p>Special issue launch</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">December 03, 2021</span> <strong>Richard Müller (Institute of Czech Literature, Prague)</strong></div>
+      <p>The Information (Cybernetics) Moment</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">December 01, 2021</span> <strong>David Deutsch (Oxford)</strong></div>
+      <p>Quantum Computation</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">November 19, 2021</span> <strong>Visvanathan Ramesh (Goethe University Frankfurt)</strong></div>
+      <p>AI, AGI, and the Center for Cognition and Computation</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">October 29, 2021</span> <strong>Lydia Liu (Columbia)</strong></div>
+      <p>Wittgenstein in the Machine</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">May 07, 2021</span> <strong>Lila Lee-Morrison (SDU)</strong></div>
+      <p>Machinic Landscapes: Aesthetics of the Non-Human</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">April 23, 2021</span> <strong>Brian Cantwell Smith (University of Toronto)</strong></div>
+      <p>The Promise of Artificial Intelligence</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">April 09, 2021</span> <strong>Paola Ricaurte (Tecnológico de Monterrey)</strong></div>
+      <p>De-colonizing AI Ethics</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">April 06, 2021</span> <strong>Claire Song (NYU)</strong></div>
+      <p>Code War: A Transnational History of Machine Translation and Intelligence in East Asia, the Soviet Union, and the United States</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">March 26, 2021</span> <strong>Sam Kellogg (NYU)</strong></div>
+      <p>On High Ground: Mountains, Geopolitics, Alpine Media</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">March 16, 2021</span> <strong>Ryan Healey (NYU)</strong></div>
+      <p>A History of Abstraction?</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">March 05, 2021</span> <strong>Matteo Pasquinelli (Ca' Foscari)</strong></div>
+      <p>Material Tools of Algorithmic Thinking</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">February 26, 2021</span> <strong>Jeffrey Kirkwood (Binghamton)</strong></div>
+      <p>From Work to Proof-of-Work: Meaning and Value after Blockchain</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">February 05, 2021</span> <strong>Mercedes Bunz (KCL)</strong></div>
+      <p>How Not to be Governed like that by our Digital Technologies</p>
+    </div>
+    <h4>2020</h4>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">December 04, 2020</span> <strong>Sam Kellogg (NYU)</strong></div>
+      <p>On AI and Metaphor</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">November 20, 2020</span> <strong>Beatrice Fazi (Sussex)</strong></div>
+      <p>Beyond Human: Deep Learning, Explainability and Representation</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">November 13, 2020</span> <strong>Rae Bruml Norton (NYU)</strong></div>
+      <p>If You Give a Mouse Gilbert Simondon</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">October 23, 2020</span> <strong>Colin Koopman (University of Oregon)</strong></div>
+      <p>The Political Theory of Data: Institutions, Algorithms and Formats</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">October 02, 2020</span> <strong>Jonathan Zong (MIT / CSAIL)</strong></div>
+      <p>Designing Digital Systems to Theorize Collective Power</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">September 18, 2020</span> <strong>Clifford Siskin (NYU)</strong></div>
+      <p>Enlightenment and the Vectors of Information</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">July 10, 2020</span> <strong>Allison Parrish (NYU)</strong></div>
+      <p>Conversation on NLP</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">April 24, 2020</span> <strong>Lila Lee-Morrison (Lund University)</strong></div>
+      <p>Portraits of Automated Facial Recognition</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">March 04, 2020</span> <strong>Shannon Mattern (Penn) and John Durham Peters (Yale)</strong></div>
+      <p>Meteorological Media</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">February 28, 2020</span> <strong>Matthew Trager (NYU)</strong></div>
+      <p>Functions and Deep Learning</p>
+    </div>
+    <h4>2019</h4>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">November 18, 2019</span> <strong>Tyler Harper (NYU)</strong></div>
+      <p>Environmental Nihilism: Human Extinction Before the Bomb</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">May 28, 2019</span> <strong>Digital Theory Summer School, King's College London</strong></div>
+      <p>Two-day symposium</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">May 03, 2019</span> <strong>William Falcon</strong></div>
+      <p>AI Research and Engineering</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">April 26, 2019</span> <strong>Matthew Trager (NYU)</strong></div>
+      <p>Computer Vision, Geometry, and Machine Learning</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">April 22, 2019</span> <strong>Joe Lemelin (NYU)</strong></div>
+      <p>Aristotle and Machine Learning</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">April 12, 2019</span> <strong>Alfredo Canziani (NYU)</strong></div>
+      <p>Workshop: Convolutional Neural Networks</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">February 22, 2019</span> <strong>Alfredo Canziani (NYU)</strong></div>
+      <p>Workshop: Python and Neural Network Architecture</p>
+    </div>
+    <h4>2018</h4>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">December 05, 2018</span> <strong>Pete de Bolla (Cambridge)</strong></div>
+      <p>Politics in the Era of Emergent Hyper-Connectivity</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">November 07, 2018</span> <strong>Mohamed Zahran (NYU)</strong></div>
+      <p>How Fortran Is Built Out of Assembly</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">October 23, 2018</span> <strong>Dennis Tenen (Columbia)</strong></div>
+      <p>Platform Reading: Workshop on the Poetics of Computation</p>
+    </div>
+    <div class="event">
+      <div class="event-meta"><span class="event-date">October 16, 2018</span> <strong>Zeena Feldman (KCL Digital Humanities)</strong></div>
+      <p>Simmel in Cyberspace / Data Detox Workshop</p>
+    </div>
+  
+
+</body></html>

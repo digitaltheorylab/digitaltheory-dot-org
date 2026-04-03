@@ -12,23 +12,23 @@ RHEO_CACHE="$REPO_DIR/.rheo-binary"
 RHEO_BIN="$RHEO_CACHE/rheo"
 
 # Download rheo binary from GitHub release if not cached
-if [ ! -f "$RHEO_BIN" ]; then
-  echo "Downloading rheo ${RHEO_VERSION}..."
-  mkdir -p "$RHEO_CACHE"
-  curl -sL "https://github.com/freecomputinglab/rheo/releases/download/${RHEO_VERSION}/rheo-x86_64-unknown-linux-gnu.zip" -o /tmp/rheo.zip
-  unzip -o /tmp/rheo.zip -d "$RHEO_CACHE"
-  chmod +x "$RHEO_BIN"
-  rm /tmp/rheo.zip
-  echo "Rheo downloaded successfully"
-else
-  echo "Using cached rheo binary"
-fi
+# if [ ! -f "$RHEO_BIN" ]; then
+#   echo "Downloading rheo ${RHEO_VERSION}..."
+#   mkdir -p "$RHEO_CACHE"
+#   curl -sL "https://github.com/freecomputinglab/rheo/releases/download/${RHEO_VERSION}/rheo-x86_64-unknown-linux-gnu.zip" -o /tmp/rheo.zip
+#   unzip -o /tmp/rheo.zip -d "$RHEO_CACHE"
+#   chmod +x "$RHEO_BIN"
+#   rm /tmp/rheo.zip
+#   echo "Rheo downloaded successfully"
+# else
+#   echo "Using cached rheo binary"
+# fi
 
 # Add rheo to PATH
-export PATH="$RHEO_CACHE:$PATH"
+# export PATH="$RHEO_CACHE:$PATH"
 
 # Verify rheo is accessible
-rheo --version || echo "Warning: rheo --version failed, but continuing..."
+# rheo --version || echo "Warning: rheo --version failed, but continuing..."
 
 # Download private fonts if FONTS_GITHUB_TOKEN is set (used in CI/CD)
 if [ -n "${FONTS_GITHUB_TOKEN}" ]; then
@@ -54,8 +54,8 @@ else
 fi
 
 # Compile the project
-echo "Compiling with rheo..."
-rheo compile . --html
+# echo "Compiling with rheo..."
+# rheo compile . --html
 
 # Copy over images
 cp -r content/img build/html/img
