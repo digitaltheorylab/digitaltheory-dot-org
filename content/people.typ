@@ -17,7 +17,7 @@
   "Tyler Shoemaker",
   role: "Assistant Professor, English",
   url: "https://tylershoemaker.info",
-  institution: "Texas A&M"
+  institution: "Texas A&M University"
 )
 
 #render-people(groups, people)

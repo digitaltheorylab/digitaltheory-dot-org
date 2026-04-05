@@ -1,7 +1,7 @@
 #let groups = (
   team: (name: "Team"),
   grad: (name: "Graduate Students"),
-  affiliate: (name: "Affiliations"),
+  affiliate: (name: "Affiliates"),
 )
 
 #let people = (
