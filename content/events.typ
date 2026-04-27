@@ -1,10 +1,12 @@
-#import "site.typ": template, event, render-event, get-unique-years
+#import "site.typ": event, get-unique-years, render-event, template
 #import "data/events.typ": events
 #show: template.with(current-page: "events")
 
 = Events
 
 #let sorted = events.sorted(key: e => e.date)
+// NOTE: once an event passes, we need to manually trigger a rebuild, as
+// the CD will not automatically rebuild to move 'Upcoming' to 'Past Events'
 #let today = datetime.today()
 
 #let upcoming = sorted.filter(e => e.date >= today)
