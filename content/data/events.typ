@@ -1,5 +1,15 @@
 #let events = (
   (
+    speaker: "Webb Keane (U Michigan)",
+    date: datetime(year: 2026, month: 10, day: 9),
+    title: [Title TBD],
+  ),
+  (
+    speaker: "Leonardo Impett (Cambridge) and Fabian Offert (UCSB)",
+    date: datetime(year: 2026, month: 9, day: 11),
+    title: [Book talk, _Vector Media_],
+  ),
+  (
     speaker: "Terry Winograd (Stanford)",
     date: datetime(year: 2026, month: 4, day: 20),
     url: "https://as.nyu.edu/research-centers/remarque/events/Spring-2026/terry-winograd--what-s-up-with-ai-.html",
