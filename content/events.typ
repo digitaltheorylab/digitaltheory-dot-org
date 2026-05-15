@@ -1,4 +1,4 @@
-#import "site.typ": template, event, render-event, get-unique-years
+#import "site.typ": event, get-unique-years, render-event, template
 #import "data/events.typ": events
 #show: template.with(current-page: "events")
 

@@ -40,22 +40,22 @@ rheo watch . --html --open
 ## Deployment
 
 The site is hosted on **Netlify** and auto-deploys on pushes to the `main`
-branch on GitHub.
+branch on GitHub. It also rebuilds itself every Sunday at 11:59 pm UTC using a
+GitHub Action.
 
 - **Build command** (from `netlify.toml`): `bash build.sh`
 - **Publish directory**: `build/html`
 
-### What `build.sh` does
+When the site is deployed, `build.sh` does the following:
 
-1. Downloads the `rheo` binary from GitHub releases if not cached.
-2. Downloads Berkeley Mono fonts from a private GitHub repo using the
-   `FONTS_GITHUB_TOKEN` env var (set in the Netlify dashboard). Falls back to
-   local `fonts/` symlinks if the variable is not set.
-3. Runs `rheo compile . --html` to generate `build/html/`.
-4. Copies `content/img/` into the build output.
+1. Downloads the `rheo` binary from GitHub releases (if not cached)
+2. Downloads Berkeley Mono fonts with a fall back to local `fonts/` symlinks if
+   `FONTS_GITHUB_TOKEN` isn't set
+3. Runs `rheo compile . --html` to generate `build/html/`
+4. Copies `content/img/` into the build output
 
-The `FONTS_GITHUB_TOKEN` secret must be configured in **Netlify -> Site
-settings → Environment variables**.
+Configure `FONTS_GITHUB_TOKEN` in **Netlify -> Site settings -> Environment
+variables**.
 
 ## Adding Events
 
