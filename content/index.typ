@@ -4,7 +4,7 @@
 = Digital Theory Lab
 
 The Digital Theory Lab studies artificial intelligence and computing from a broad-based humanistic perspective. 
-Founded in 2018, the Lab is an #link("./people.typ")[international network of researchers] in literary and media studies, philosophy, and other humanities disciplines. 
+Founded in 2018, the Lab is an #link(<people>)[international network of researchers] in literary and media studies, philosophy, and other humanities disciplines. 
 Its goal is to fuse theory from the humanities with theory from data science, computer science, and cognitive science. 
  
 Humanistic inquiry is sometimes treated as 'purely' ethical and social, rendering computing an application domain in fields such as "ethical AI" or "critical AI studies." 
