@@ -1,5 +1,10 @@
 #let events = (
   (
+    speaker: "Sal Hagen (U Amsterdam)",
+    date: datetime(year: 2026, month: 10, day: 30),
+    title: [Title TBD],
+  ),
+  (
     speaker: "Webb Keane (U Michigan)",
     date: datetime(year: 2026, month: 10, day: 9),
     title: [Title TBD],
