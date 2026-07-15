@@ -1,11 +1,11 @@
-version = "0.4.0"
+version = "0.5.0"
 content_dir = "content"
 
 [pdf.spine]
 title = "Digital Theory Lab"
-vertebrae = ["index.typ", "research.typ", "people.typ", "events.typ"]
 merge = true
+exclude = ["data/events.typ", "data/people.typ", "site.typ"]
 
 [epub.spine]
 title = "Digital Theory Lab"
-vertebrae = ["index.typ", "research.typ", "people.typ", "events.typ"]
+exclude = ["data/events.typ", "data/people.typ", "site.typ"]
