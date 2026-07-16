@@ -15,6 +15,11 @@
     title: [Book talk, _Vector Media_],
   ),
   (
+    speaker: "Hagen Blix and Edward Ongweso",
+    date: datetime(year: 2026, month: 8, day: 27),
+    title: [Marxism and AI],
+  ),
+  (
     speaker: "Terry Winograd (Stanford)",
     date: datetime(year: 2026, month: 4, day: 20),
     url: "https://as.nyu.edu/research-centers/remarque/events/Spring-2026/terry-winograd--what-s-up-with-ai-.html",
