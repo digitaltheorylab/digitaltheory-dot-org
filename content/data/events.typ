@@ -74,7 +74,7 @@
     title: [Two-day symposium],
   ),
   (
-    speaker: "Felicia Jing, Juana Becerra, and Ranjodh Singh Dhaliwal",
+    speaker: "Felicia Jing (JHU), Juana Becerra (Harvard), and Ranjodh Singh Dhaliwal (Basel)",
     date: datetime(year: 2025, month: 9, day: 19),
     title: [On Emplotment: Phantom Islands, Synthetic Data, and the Coloniality of Simulated Algorithmic Space],
   ),
@@ -173,7 +173,7 @@
     title: [On Reading and Interpreting Black Box Deep Neural Networks],
   ),
   (
-    speaker: "N. Katherine Hayles and Terrence W. Deacon",
+    speaker: "N. Katherine Hayles (Duke) and Terrence W. Deacon (Berkeley)",
     date: datetime(year: 2023, month: 3, day: 30),
     title: [Signs of Artificial Life: A Symposium and Debate],
     url: "https://digitalhumanities.nyu.edu/news/2023-06-28-hayles-deacon-recordings/",
@@ -220,17 +220,17 @@
     title: [Post-Automation Poetics],
   ),
   (
-    speaker: "Tung-Hui Hu",
+    speaker: "Tung-Hui Hu (Michigan)",
     date: datetime(year: 2022, month: 10, day: 21),
     title: [Book talk, _Digital Lethargy_],
   ),
   (
-    speaker: "Shane Denson",
+    speaker: "Shane Denson (Stanford)",
     date: datetime(year: 2022, month: 9, day: 9),
     title: [Mediality as Power of the Flesh],
   ),
   (
-    speaker: "What Is Digital Theory? ",
+    speaker: "What Is Digital Theory?",
     date: datetime(year: 2022, month: 5, day: 5),
     title: [One-day symposium],
   ),
@@ -295,7 +295,7 @@
     title: [Machinic Landscapes: Aesthetics of the Non-Human],
   ),
   (
-    speaker: "Brian Cantwell Smith (University of Toronto)",
+    speaker: "Brian Cantwell Smith (U Toronto)",
     date: datetime(year: 2021, month: 4, day: 23),
     title: [The Promise of Artificial Intelligence],
   ),
@@ -350,12 +350,12 @@
     title: [If You Give a Mouse Gilbert Simondon],
   ),
   (
-    speaker: "Colin Koopman (University of Oregon)",
+    speaker: "Colin Koopman (U Oregon)",
     date: datetime(year: 2020, month: 10, day: 23),
     title: [The Political Theory of Data: Institutions, Algorithms and Formats],
   ),
   (
-    speaker: "Jonathan Zong (MIT / CSAIL)",
+    speaker: "Jonathan Zong (MIT)",
     date: datetime(year: 2020, month: 10, day: 2),
     title: [Designing Digital Systems to Theorize Collective Power],
   ),
@@ -370,7 +370,7 @@
     title: [Conversation on NLP],
   ),
   (
-    speaker: "Lila Lee-Morrison (Lund University)",
+    speaker: "Lila Lee-Morrison (Lund)",
     date: datetime(year: 2020, month: 4, day: 24),
     title: [Portraits of Automated Facial Recognition],
   ),
@@ -435,7 +435,7 @@
     title: [Platform Reading: Workshop on the Poetics of Computation],
   ),
   (
-    speaker: "Zeena Feldman (KCL Digital Humanities)",
+    speaker: "Zeena Feldman (KCL)",
     date: datetime(year: 2018, month: 10, day: 16),
     title: [Simmel in Cyberspace / Data Detox Workshop],
   ),
