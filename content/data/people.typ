@@ -83,6 +83,13 @@
     affiliation: groups.grad,
   ),
   (
+    name: "Tianyi Ding",
+    role: "PhD Student, German",
+    url: "https://as.nyu.edu/departments/german/people/graduate-students/tianyi-ding.html",
+    institution: "NYU",
+    affiliation: groups.grad,
+  ),
+  (
     name: "Jonah Henkle",
     role: "PhD Student, Comparative Literature",
     url: "https://uci.academia.edu/JonahHenkle",
