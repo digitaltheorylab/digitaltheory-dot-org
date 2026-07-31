@@ -30,6 +30,8 @@
 
 == Workshops
 
+- #link("https://digitaltheorylab.github.io/2026_interpretability-reader/")[Introduction 
+  to Interpretability for Language Models] (July 2026). Two-week workshop.
 - #link("https://t-shoemaker.github.io/2024_dtl_lm-interpretability")[Introduction to
   Interpretability for Language Models] (July 2024). Three-week workshop.
 
