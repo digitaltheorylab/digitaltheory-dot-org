@@ -1,5 +1,10 @@
 #let events = (
   (
+    speaker: "Naomi Saphra (Boston U)",
+    date: datetime(year: 2026, month: 11, day: 30),
+    title: [When Can We Predict Model Behavior?],
+  ),
+  (
     speaker: "Sal Hagen (U Amsterdam)",
     date: datetime(year: 2026, month: 10, day: 30),
     title: [Title TBD],
@@ -8,6 +13,11 @@
     speaker: "Webb Keane (U Michigan)",
     date: datetime(year: 2026, month: 10, day: 9),
     title: [Title TBD],
+  ),
+  (
+    speaker: "Joe Wiesenthal, with Jeffrey Kirkwood (Binghamton U) and Leif Weatherby (NYU)",
+    date: datetime(year: 2026, month: 9, day: 14),
+    title: [On Havelock.ai],
   ),
   (
     speaker: "Leonardo Impett (Cambridge) and Fabian Offert (UCSB)",
