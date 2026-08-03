@@ -10,6 +10,11 @@
     title: [Title TBD],
   ),
   (
+    speaker: "Structure, Sign, and Play in the Age of AI",
+    date: datetime(year: 2026, month: 10, day: 21),
+    title: [Two-day conference],
+  ),
+  (
     speaker: "Webb Keane (U Michigan)",
     date: datetime(year: 2026, month: 10, day: 9),
     title: [Title TBD],
