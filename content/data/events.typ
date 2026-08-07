@@ -20,9 +20,9 @@
     title: [Title TBD],
   ),
   (
-    speaker: "Joe Wiesenthal, with Jeffrey Kirkwood (Binghamton U) and Leif Weatherby (NYU)",
+    speaker: "Joe Wiesenthal, with Jeffrey West Kirkwood (Binghamton U) and Susannah Glickman (Stony Brook U)",
     date: datetime(year: 2026, month: 9, day: 14),
-    title: [On Havelock.ai],
+    title: [Line Go Up? A Conversation on AI and Finance],
   ),
   (
     speaker: "Leonardo Impett (Cambridge) and Fabian Offert (UCSB)",
@@ -32,7 +32,7 @@
   (
     speaker: "Hagen Blix and Edward Ongweso",
     date: datetime(year: 2026, month: 8, day: 27),
-    title: [Marxism and AI],
+    title: [Marxist Critique after AI],
   ),
   (
     speaker: "Terry Winograd (Stanford)",
