@@ -1,5 +1,10 @@
 #let events = (
   (
+    speaker: "Clemens Apprich (Die Angewandte)",
+    date: datetime(year: 2027, month: 2, day: 12),
+    title: [Book talk, _Errant Intelligence_],
+  ),
+  (
     speaker: "Naomi Saphra (Boston U)",
     date: datetime(year: 2026, month: 11, day: 30),
     title: [When Can We Predict Model Behavior?],
