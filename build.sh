@@ -7,7 +7,7 @@ echo "Timestamp: $(date)"
 
 # Setup paths
 REPO_DIR="$(pwd)"
-RHEO_VERSION="v0.4.0"
+RHEO_VERSION="v$(grep '^version' "$REPO_DIR/rheo.toml" | sed 's/version = "\(.*\)"/\1/')"
 RHEO_CACHE="$REPO_DIR/.rheo-binary"
 RHEO_BIN="$RHEO_CACHE/rheo"
 
