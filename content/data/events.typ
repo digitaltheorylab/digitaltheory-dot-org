@@ -22,7 +22,7 @@
   (
     speaker: "Webb Keane (U Michigan)",
     date: datetime(year: 2026, month: 10, day: 9),
-    title: [Title TBD],
+    title: [From Talking Tools to Metahumans],
   ),
   (
     speaker: "Leonardo Impett (Cambridge) and Fabian Offert (UCSB)",
