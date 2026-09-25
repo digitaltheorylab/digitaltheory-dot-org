@@ -6,7 +6,7 @@
 
 #person(
   "Leif Weatherby",
-  role: "Associate Professor, German",
+  role: "Professor, German",
   url: "https://as.nyu.edu/faculty/leif-allison-reid-weatherby.html", 
   institution: "New York University"
 )
