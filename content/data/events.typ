@@ -10,6 +10,12 @@
     title: [When Can We Predict Model Behavior?],
   ),
   (
+    speaker: "Daniel Litt (U Toronto)",
+    date: datetime(year: 2026, month: 11, day: 3),
+    url: "https://as.nyu.edu/research-centers/remarque/events/Fall-2026/daniel-litt--a-beginning-for-mathematics.html",
+    title: [A Beginning for Mathematics],
+  ),
+  (
     speaker: "Sal Hagen (U Amsterdam)",
     date: datetime(year: 2026, month: 10, day: 30),
     title: [Title TBD],
