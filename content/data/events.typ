@@ -28,7 +28,7 @@
   ),
   (
     speaker: "Webb Keane (U Michigan)",
-    date: datetime(year: 2026, month: 10, day: 9),
+    date: datetime(year: 2026, month: 10, day: 16),
     title: [From Talking Tools to Metahumans],
   ),
   (
