@@ -4,7 +4,7 @@
 == Books
 
 - #link("https://www.upress.umn.edu/9781517920197/digital-theory/")[_Digital Theory_]
-  (December 2025). Beatrice Fazi, Alexander Galloway, Matthew Handelman,
+  (December 2025). M. Beatrice Fazi, Alexander Galloway, Matthew Handelman,
   Leif Weatherby. University of Minnesota Press.
 
 - #link("https://www.upress.umn.edu/9781517919320/language-machines")[_Language Machines:
@@ -12,6 +12,9 @@
   University of Minnesota Press.
 
 == Articles and Special Issues
+
+- #link("https://aksioma.org/cave-machines")["Cave Machines: On the Platonic
+  Representation Hypothesis"] (October 2026). M. Beatrice Fazi. PostScriptUM 56.
 
 - #link("https://www.journals.uchicago.edu/doi/abs/10.1086/739755")["On the
   Calculation of Meaning, or Doing Words without Things"] (March 2026).
@@ -21,8 +24,8 @@
   Programming the Model"] (March 2026). Tyler Shoemaker. _AI & Society_.
 
 - #link("https://journals.ub.uni-koeln.de/index.php/phidi/article/view/11665")["A
-  Transcendental Philosophy of Large Language Models"] (July 2025). Beatrice Fazi.
-  _Philosophy & Digitality_.
+  Transcendental Philosophy of Large Language Models"] (July 2025). M. Beatrice
+  Fazi. _Philosophy & Digitality_.
 
 - #link("https://www.journals.uchicago.edu/toc/ci/2022/48/2")[Surplus Data]
   (February 2022). Special issue edited by Lab members. _Critical Inquiry_,
@@ -32,6 +35,7 @@
 
 - #link("https://digitaltheorylab.github.io/2026_interpretability-reader/")[Introduction 
   to Interpretability for Language Models] (July 2026). Two-week workshop.
+
 - #link("https://t-shoemaker.github.io/2024_dtl_lm-interpretability")[Introduction to
   Interpretability for Language Models] (July 2024). Three-week workshop.
 
@@ -47,7 +51,7 @@ The working group is currently run by
 === #link("https://lolm.ohrg.org")[LOLM]
 The Language of Language Machines (LOLM) is a working group to produce a
 critical vocabulary for understanding contemporary (post-2015) natural language
-processing (NLP) literature. 
+processing (NLP) literature.
 The working group is currently run by
 #link("https://lachlankermode.com")[Lachlan Kermode] and
 #link("https://ryan-healey.com/")[Ryan Healey].
