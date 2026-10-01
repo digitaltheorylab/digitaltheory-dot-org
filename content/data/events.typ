@@ -19,7 +19,7 @@
   (
     speaker: "Sal Hagen (U Amsterdam)",
     date: datetime(year: 2026, month: 10, day: 30),
-    title: [Title TBD],
+    title: [From Vectors to Vibes],
   ),
   (
     speaker: "Structure, Sign, and Play in the Age of AI",
