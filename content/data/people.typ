@@ -76,6 +76,13 @@
     affiliation: groups.team,
   ),
   (
+    name: "Andrea Capra",
+    role: "Assistant Professor, Italian Studies",
+    url: "https://andreacapra.com/",
+    institution: "New York University",
+    affiliation: groups.team,
+  ),
+  (
     name: "Eleonora Antonakaki",
     role: "PhD Candidate, German",
     url: "https://german.northwestern.edu/people/graduate-students/antonakaki-giannisi-eleonora.html",
