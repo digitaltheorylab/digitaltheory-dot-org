@@ -132,7 +132,7 @@
   ),
   (
     name: "David Bering-Porter", 
-    role: "Assistant Professor, Culture and Media", 
+    role: "Associate Professor, Culture and Media", 
     url: "https://www.newschool.edu/lang/faculty/david-bering-porter", 
     institution: "The New School",
     affiliation: groups.affiliate,
@@ -181,7 +181,7 @@
   ),
   (
     name: "Fabian Offert",
-    role: "Assistant Professor, History and Theory of the Digital Humanities",
+    role: "Associate Professor, History and Theory of the Digital Humanities",
     url: "https://zentralwerkstatt.org",
     institution: "University of California, Santa Barbara",
     affiliation: groups.affiliate,
