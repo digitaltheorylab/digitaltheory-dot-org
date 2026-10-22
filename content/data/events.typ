@@ -1,5 +1,10 @@
 #let events = (
   (
+    speaker: "The Automation of Knowledge",
+    date: datetime(year: 2027, month: 3, day: 22),
+    title: [Three-day conference],
+  ),
+  (
     speaker: "Clemens Apprich (Die Angewandte)",
     date: datetime(year: 2027, month: 2, day: 12),
     title: [Book talk, _Errant Intelligence_],
