@@ -29,6 +29,7 @@
   (
     speaker: "Structure, Sign, and Play in the Age of AI",
     date: datetime(year: 2026, month: 10, day: 21),
+    url: "https://german.duke.edu/events/structure-sign-and-play-age-ai",
     title: [Two-day conference],
   ),
   (
