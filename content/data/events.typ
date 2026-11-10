@@ -10,6 +10,11 @@
     title: [Book talk, _Errant Intelligence_],
   ),
   (
+    speaker: "Xiaochang Li (Stanford)",
+    date: datetime(year: 2026, month: 12, day: 11),
+    title: [Book talk, _Divination Engines_],
+  ),
+  (
     speaker: "Naomi Saphra (Boston U)",
     date: datetime(year: 2026, month: 11, day: 30),
     url: "https://as.nyu.edu/research-centers/remarque/events/Fall-2026/naomi-saphra.html",
