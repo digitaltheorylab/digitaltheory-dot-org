@@ -1,8 +1,23 @@
 #let events = (
   (
+    speaker: "Alison Gopnik (Berkeley)",
+    date: datetime(year: 2027, month: 5, day: 3),
+    title: [Title TBA],
+  ),
+  (
+    speaker: "Lorraine Daston (Planck Institute; U Chicago)",
+    date: datetime(year: 2027, month: 4, day: 9),
+    title: [Title TBA],
+  ),
+  (
     speaker: "The Automation of Knowledge",
     date: datetime(year: 2027, month: 3, day: 22),
     title: [Three-day conference],
+  ),
+  (
+    speaker: "Lachlan Kermode (Brown)",
+    date: datetime(year: 2027, month: 3, day: 12),
+    title: [Title TBA],
   ),
   (
     speaker: "Clemens Apprich (Die Angewandte)",
